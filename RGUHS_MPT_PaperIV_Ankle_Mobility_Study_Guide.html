@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impaired Mobility in Ankle Injuries - Evidence-Based Mobilization (MPT Study Guide)</title>
+<meta name="description" content="RGUHS MPT Paper IV study guide: impaired mobility in ankle injuries and its evidence-based mobilization management.">
+<script>(function(){try{var d=document.documentElement;if(localStorage.getItem('rguhsAnkleMob-theme')==='dark')d.classList.add('dark');if(localStorage.getItem('rguhsAnkleMob-fit')==='1')d.classList.add('fit');}catch(e){}})();</script>
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#1b1f24; --muted:#5b6472;
+  --line:#e4e7eb; --line-2:#d3d8de;
+  --accent:#0f766e; --accent-ink:#0b5f59; --accent-soft:#e8f3f1;
+  --term:#4a5560; --term-dot:#9aa3ad;
+}
+html.dark{
+  --bg:#101216; --panel:#171a1f; --ink:#e7e9ed; --muted:#98a1ac;
+  --line:#262a31; --line-2:#333842;
+  --accent:#5eead4; --accent-ink:#5eead4; --accent-soft:#16292a;
+  --term:#aab2bd; --term-dot:#5a6470;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.68;
+  -webkit-font-smoothing:antialiased;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px;}
+html.fit .wrap{max-width:100%;padding-left:16px;padding-right:16px;}
+
+.toolbar{position:sticky;top:0;z-index:80;display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  padding:9px 20px;background:var(--panel);border-bottom:1px solid var(--line);font-size:13.5px;}
+.toolbar .lbl{color:var(--muted);font-weight:600;}
+.sw{width:22px;height:22px;border-radius:50%;border:1px solid var(--line-2);cursor:pointer;padding:0;}
+.sw.yellow{background:#ffe680;} .sw.green{background:#a8e6a3;} .sw.pink{background:#ffb3d1;}
+.btn{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);
+  border-radius:8px;padding:5px 10px;cursor:pointer;font:inherit;font-size:13px;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent);}
+.btn.active{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);font-weight:600;}
+.sep{width:1px;height:20px;background:var(--line-2);}
+.hint{margin-left:auto;color:var(--muted);font-size:12.5px;}
+
+.doc-head{background:var(--panel);border-bottom:1px solid var(--line);padding:26px 20px 22px;margin-bottom:22px;}
+.doc-head .eyebrow{margin:0 0 6px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.doc-head h1{margin:0 0 8px;font-size:27px;line-height:1.25;}
+.doc-head .subtitle{margin:0 0 12px;font-size:15.5px;color:var(--muted);}
+.doc-head .meta{margin:0;font-size:13.5px;color:var(--muted);}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:24px 26px;}
+
+section.q{display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "body";
+  column-gap:22px;align-items:start;padding:6px 0 16px;border-bottom:1px solid var(--line);margin-bottom:6px;}
+section.q:last-of-type{border-bottom:none;}
+section.q.open{grid-template-columns:minmax(0,1fr) 280px;grid-template-areas:"head notes" "body notes";}
+.q-head{grid-area:head;display:flex;align-items:center;justify-content:space-between;gap:12px;
+  border-bottom:2px solid var(--line-2);padding-bottom:7px;margin:6px 0 12px;}
+.q-head h2{margin:0;padding:0;border:none;flex:1;}
+.q-body{grid-area:body;min-width:0;}
+.q-notes{grid-area:notes;display:none;position:sticky;top:60px;}
+section.q.open .q-notes{display:block;animation:fadeIn .18s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-3px);}to{opacity:1;transform:none;}}
+.notes-toggle{flex:0 0 auto;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--accent);
+  background:var(--accent-soft);color:var(--accent-ink);border-radius:999px;padding:4px 12px;font:inherit;font-size:13px;
+  font-weight:600;cursor:pointer;transition:border-color .15s ease,background .15s ease,color .15s ease;}
+.notes-toggle:hover{border-color:var(--accent);color:var(--ink);}
+.notes-toggle .qn{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;
+  border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);font-weight:700;font-size:12px;}
+.notes-toggle.has-note .qn{background:var(--accent);color:#fff;}
+.notes-toggle.active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent-ink);}
+.notes-head{display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:6px;}
+.notes-hide{border:1px solid var(--line-2);background:var(--panel);color:var(--muted);border-radius:7px;
+  padding:2px 8px;font:inherit;font-size:11px;cursor:pointer;text-transform:none;letter-spacing:0;}
+.notes-hide:hover{border-color:var(--accent);color:var(--ink);}
+.notes-box{width:100%;min-height:150px;resize:vertical;padding:10px 11px;font:inherit;font-size:14.5px;line-height:1.55;
+  color:var(--ink);background:var(--bg);border:1px solid var(--line-2);border-radius:8px;}
+.notes-box:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft);}
+.notes-status{min-height:16px;font-size:12px;color:var(--muted);margin-top:5px;}
+
+h2{font-size:22px;margin:0;padding:0;border:none;}
+h3{font-size:18px;margin:22px 0 6px;}
+h4{font-size:16px;margin:18px 0 5px;color:var(--muted);font-weight:700;}
+p{margin:10px 0;}
+ul,ol{margin:10px 0 10px 2px;padding-left:24px;}
+li{margin:5px 0;}
+.cell-list{margin:4px 0;padding-left:18px;}
+
+.table-wrap{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:8px;}
+table{border-collapse:collapse;width:100%;font-size:14px;}
+th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;text-align:left;}
+th{background:var(--accent-soft);color:var(--accent-ink);font-weight:700;}
+tbody tr:nth-child(even){background:rgba(127,127,127,.05);}
+
+.term{color:var(--term);border-bottom:1px dotted var(--term-dot);cursor:help;}
+.term:hover{background:var(--accent-soft);border-bottom-color:var(--accent);}
+html.no-notes .term{border-bottom:none;color:inherit;cursor:inherit;background:none;}
+
+#popup{position:absolute;z-index:200;max-width:330px;display:none;padding:11px 13px;border-radius:9px;
+  background:#1c1f24;color:#f1f3f6;font-size:14px;line-height:1.5;box-shadow:0 12px 30px rgba(0,0,0,.28);}
+html.dark #popup{background:#2a2f36;color:#eef1f4;border:1px solid var(--line-2);}
+#popup b{color:#fff;}
+
+mark.hl{border-radius:3px;padding:0 1px;color:inherit;}
+mark.hl.yellow{background:rgba(255,214,0,.38);}
+mark.hl.green{background:rgba(52,199,89,.32);}
+mark.hl.pink{background:rgba(255,90,150,.30);}
+.notes-fab{position:fixed;right:20px;bottom:20px;z-index:120;display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:11px 17px;
+  font:inherit;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.22);}
+html.dark .notes-fab{color:#052622;}
+.notes-fab:hover{filter:brightness(1.06);}
+.notes-fab .fab-badge{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;
+  border-radius:50%;background:rgba(255,255,255,.28);font-size:12px;padding:0 5px;}
+.notes-fab .fab-badge[hidden]{display:none;}
+.notes-drawer{position:fixed;top:0;right:0;height:100%;width:min(430px,92vw);z-index:130;background:var(--panel);
+  border-left:1px solid var(--line);box-shadow:-12px 0 34px rgba(0,0,0,.2);transform:translateX(102%);
+  transition:transform .22s ease;display:flex;flex-direction:column;}
+.notes-drawer.open{transform:none;}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line);}
+.drawer-head strong{font-size:16px;}
+.drawer-close{border:1px solid var(--line-2);background:var(--panel);color:var(--ink);border-radius:8px;
+  padding:4px 11px;font:inherit;font-size:13px;cursor:pointer;}
+.drawer-close:hover{border-color:var(--accent);}
+.drawer-hint{margin:10px 18px 2px;color:var(--muted);font-size:12.5px;}
+.drawer-body{overflow:auto;padding:6px 18px 28px;}
+.drawer-item{margin:12px 0;}
+.drawer-label{display:block;font-size:13px;font-weight:600;margin-bottom:5px;}
+.drawer-note{min-height:88px;}
+.drawer-scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:125;opacity:0;pointer-events:none;
+  transition:opacity .22s ease;}
+.drawer-scrim.open{opacity:1;pointer-events:auto;}
+.flow{display:flex;flex-direction:column;align-items:center;gap:6px;margin:16px 0;}
+.flow-box{border:1px solid var(--line-2);background:var(--bg);border-radius:8px;padding:9px 14px;text-align:center;max-width:560px;font-size:15px;}
+.flow-arrow{color:var(--muted);font-size:16px;line-height:1;}
+li > ul, li > ol{margin:6px 0 2px;}
+
+.glossary{margin-top:26px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:6px 18px;}
+.glossary summary{cursor:pointer;font-weight:700;padding:12px 0;}
+.gloss-hint{margin:0 0 8px;color:var(--muted);font-size:13.5px;}
+.glossary ul{font-size:14px;columns:2;column-gap:26px;}
+@media (max-width:680px){.glossary ul{columns:1;}}
+footer{margin-top:22px;color:var(--muted);font-size:12.5px;text-align:center;}
+
+@media (max-width:1240px){
+  section.q.open{grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "notes" "body";}
+  .q-notes{position:static;}
+  .notes-box{min-height:110px;}
+}
+@media (max-width:520px){ .notes-toggle .nlabel{display:none;} }
+@media print{
+  .toolbar,#popup,.notes-fab,.notes-drawer,.drawer-scrim{display:none!important;}
+  .q-notes{display:none!important;}
+  body{background:#fff;}
+  .card{border:none;padding:0;}
+  .wrap{max-width:none;}
+  h2{page-break-after:avoid;}
+  .table-wrap{overflow:visible;}
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <span class="lbl">Highlight</span>
+  <button class="sw yellow" data-color="yellow" title="Yellow highlighter" aria-label="Yellow highlighter"></button>
+  <button class="sw green" data-color="green" title="Green highlighter" aria-label="Green highlighter"></button>
+  <button class="sw pink" data-color="pink" title="Pink highlighter" aria-label="Pink highlighter"></button>
+  <button class="btn" id="erase">Erase</button>
+  <button class="btn" id="clearAll">Clear all</button>
+  <span class="sep"></span>
+  <button class="btn active" id="toggleNotes">Term notes</button>
+  <button class="btn" id="toggleTheme">Night mode</button>
+  <button class="btn" id="toggleFit">Fit to screen</button>
+  <span class="hint">Select text, then pick a colour. Notes save automatically.</span>
+</div>
+
+<div class="wrap">
+
+<header class="doc-head">
+  <p class="eyebrow">Rajiv Gandhi University of Health Sciences (RGUHS), Karnataka</p>
+  <h1>Impaired Mobility in Ankle Injuries &amp; Evidence-Based Mobilization Management</h1>
+  <p class="subtitle">Master of Physiotherapy (MPT) &middot; Paper IV &middot; Model Essay Study Guide</p>
+  <p class="meta">Q.P. Code: 8132 &nbsp;|&nbsp; Physiotherapy Interventions in Musculoskeletal Disorders &nbsp;|&nbsp; Study Guide</p>
+</header>
+
+<div class="card" id="content">
+<section class="q" id="q1"><div class="q-head"><h2>Question 1: Impaired Mobility in Ankle Injuries &mdash; Pathomechanics</h2><button class="notes-toggle" data-q="1" aria-expanded="false" aria-controls="notes1" title="Notes for Question 1"><span class="qn">1</span><span class="nlabel">Notes</span></button></div><div class="q-body">
+<h3>Four mechanisms that restrict movement</h3>
+<p>Ankle injuries &mdash; from an acute inversion sprain of the <span class="term" tabindex="0" data-note="The ligament at the front of the outer ankle; the structure most often torn in a lateral ankle sprain.">anterior talofibular ligament (ATFL)</span> and <span class="term" tabindex="0" data-note="The ligament running from the outer malleolus to the heel bone; injured in more severe lateral sprains.">calcaneofibular ligament (CFL)</span>, through a <span class="term" tabindex="0" data-note="The fibrous joint between the tibia and fibula at the front and back of the ankle, injured in a high ankle sprain.">syndesmosis</span> disruption or bimalleolar fracture, to <span class="term" tabindex="0" data-note="Ongoing giving-way and repeated sprains after an ankle injury, due to lax ligaments and poor sensorimotor control.">chronic ankle instability (CAI)</span> &mdash; restrict movement through four interlinked pathways:</p>
+<ol>
+<li><strong>Intra-articular effusion &amp; <span class="term" tabindex="0" data-note="Bleeding into a joint, which increases pressure and stiffness.">haemarthrosis</span>:</strong> blood and inflammatory fluid collect inside the tight <span class="term" tabindex="0" data-note="The main ankle joint between the talus and the tibia and fibula.">talocrural joint</span> capsule. The rising capsular tension triggers <span class="term" tabindex="0" data-note="Reflex weakness of a muscle caused by a problem inside its joint, not by the muscle itself.">arthrogenic muscle inhibition (AMI)</span> of the dorsiflexors and holds the ankle in a protective resting position of plantarflexion and inversion.</li>
+<li><strong>Capsular pattern restriction:</strong> scar tissue, capsular fibrosis and adaptive shortening of the <span class="term" tabindex="0" data-note="The calf muscle group - gastrocnemius and soleus - that attaches to the Achilles tendon.">triceps surae</span> produce the classic ankle <span class="term" tabindex="0" data-note="The characteristic order in which a joint loses range when the whole joint capsule is involved. At the ankle, dorsiflexion is lost more than plantarflexion.">capsular pattern</span> &mdash; dorsiflexion is restricted more than plantarflexion.</li>
+<li><strong>Loss of accessory <span class="term" tabindex="0" data-note="The small gliding, rolling and spinning movements between joint surfaces.">arthrokinematics</span>:</strong> dorsiflexion needs the talus to roll forward while gliding backward within the <span class="term" tabindex="0" data-note="The bony socket formed by the tibia and fibula that holds the talus in the ankle joint.">mortise</span>. If fibrotic adhesions block this <span class="term" tabindex="0" data-note="The backward glide of the talus inside the mortise that is required for the ankle to dorsiflex.">posterior talar glide</span>, dorsiflexion is mechanically locked.</li>
+<li><strong>Duality of stiffness and instability:</strong> a severe inversion sprain causes two opposite problems at once &mdash; capsular <span class="term" tabindex="0" data-note="Reduced movement at a joint, usually from tight or stiff tissue.">hypomobility</span> that limits dorsiflexion, alongside ligamentous <span class="term" tabindex="0" data-note="Excessive movement at a joint, usually from lax or torn ligaments.">hypermobility</span> (a torn ATFL/CFL). Unless <span class="term" tabindex="0" data-note="The body’s ability to detect the exact position of a joint without looking at it.">joint position sense</span> is retrained, the joint gives way repeatedly.</li>
+</ol>
+<div class="flow">
+  <div class="flow-box">Acute ankle trauma</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-box">Effusion &amp; haemarthrosis &rarr; capsular tension &amp; AMI</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-box">Protective plantarflexion / inversion posture</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-box">Capsular fibrosis + loss of posterior talar glide</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-box">Dorsiflexion restriction <em>and</em> ligamentous instability</div>
+</div>
+</div><aside class="q-notes" id="notes1" aria-label="Notes for Question 1"><div class="notes-head"><span>Notes &middot; Q1</span><button class="notes-hide" data-q="1">Hide</button></div><textarea class="notes-box inline-note" data-q="1" placeholder="Write your notes for Question 1 - saved automatically"></textarea><div class="notes-status" data-q="1" aria-live="polite"></div></aside></section><section class="q" id="q2"><div class="q-head"><h2>Question 2: Osteokinematic &amp; Arthrokinematic Joint Deficits</h2><button class="notes-toggle" data-q="2" aria-expanded="false" aria-controls="notes2" title="Notes for Question 2"><span class="qn">2</span><span class="nlabel">Notes</span></button></div><div class="q-body">
+<p>Each joint loses a specific movement and needs a specific accessory glide restored. Correcting the glide is what unlocks the movement.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Joint</th><th>Primary movement deficit</th><th>Accessory glide to restore</th></tr></thead>
+<tbody>
+<tr><td>Talocrural joint</td><td>Dorsiflexion loss (normal range 10&deg;-20&deg;; below 10&deg; alters the stance phase of gait)</td><td>Posterior glide of the talus on the mortise</td></tr>
+<tr><td>Subtalar joint</td><td>Inversion and eversion restriction; loss of adaptability</td><td>Medial and lateral glides of the calcaneus</td></tr>
+<tr><td>Distal tibiofibular syndesmosis</td><td>End-range dorsiflexion pain and mortise widening</td><td>Superior and posterior glides of the fibula</td></tr>
+</tbody></table></div>
+</div><aside class="q-notes" id="notes2" aria-label="Notes for Question 2"><div class="notes-head"><span>Notes &middot; Q2</span><button class="notes-hide" data-q="2">Hide</button></div><textarea class="notes-box inline-note" data-q="2" placeholder="Write your notes for Question 2 - saved automatically"></textarea><div class="notes-status" data-q="2" aria-live="polite"></div></aside></section><section class="q" id="q3"><div class="q-head"><h2>Question 3: Clinical Assessment Protocol</h2><button class="notes-toggle" data-q="3" aria-expanded="false" aria-controls="notes3" title="Notes for Question 3"><span class="qn">3</span><span class="nlabel">Notes</span></button></div><div class="q-body">
+<ul>
+<li><strong>Goniometric vs weight-bearing assessment:</strong> non-weight-bearing dorsiflexion is measured with the knee flexed and then extended, to separate gastrocnemius from soleus tightness. Functional dorsiflexion is quantified with the <span class="term" tabindex="0" data-note="A functional measure of dorsiflexion in which the knee is driven toward a wall with the heel down; the toe-to-wall distance is recorded.">weight-bearing knee-to-wall lunge test</span> (normal toe-to-wall distance greater than 10&nbsp;cm).</li>
+<li><strong>Posterior talar glide test:</strong> with the patient supine, the tibia is stabilised while a posterior force is applied to the anterior talus, to judge accessory joint play, stiffness and <span class="term" tabindex="0" data-note="The quality of resistance felt at the very end of a joint’s available movement, used to judge what is limiting it.">end-feel</span>.</li>
+<li><strong>Ligamentous laxity screening:</strong> the anterior drawer test (performed at 10&deg;-15&deg; of plantarflexion) isolates the ATFL, while the <span class="term" tabindex="0" data-note="A test that stresses the calcaneofibular ligament by tilting the heel while the ankle is held at 90 degrees.">talar tilt test</span> (at neutral, 90&deg;) assesses CFL laxity.</li>
+<li><strong>Sensorimotor control:</strong> single-leg stance and the <span class="term" tabindex="0" data-note="A dynamic balance test in which the patient reaches as far as possible in eight directions on one leg.">Star Excursion Balance Test (SEBT)</span> quantify dynamic postural-stability deficits.</li>
+</ul>
+</div><aside class="q-notes" id="notes3" aria-label="Notes for Question 3"><div class="notes-head"><span>Notes &middot; Q3</span><button class="notes-hide" data-q="3">Hide</button></div><textarea class="notes-box inline-note" data-q="3" placeholder="Write your notes for Question 3 - saved automatically"></textarea><div class="notes-status" data-q="3" aria-live="polite"></div></aside></section><section class="q" id="q4"><div class="q-head"><h2>Question 4: Evidence-Based Mobilization Management</h2><button class="notes-toggle" data-q="4" aria-expanded="false" aria-controls="notes4" title="Notes for Question 4"><span class="qn">4</span><span class="nlabel">Notes</span></button></div><div class="q-body">
+<h3>A. Maitland joint mobilisation system</h3>
+<ul>
+<li><strong>Grades I &amp; II:</strong> small- and large-amplitude oscillations performed before tissue resistance. They stimulate articular mechanoreceptors to inhibit pain through spinal gate control.</li>
+<li><strong>Grades III &amp; IV (posterior talar glide):</strong> the clinician stabilises the posterior distal tibia and fibula while applying a posterior force over the anterior talus. Large (Grade III) or small (Grade IV) oscillations taken into end-range resistance restore posterior accessory sliding and capsular compliance.</li>
+</ul>
+<h3>B. Mulligan mobilisation with movement (MWM)</h3>
+<ul>
+<li><strong>Weight-bearing dorsiflexion MWM:</strong> the patient stands with the affected foot on a chair in a lunge position. A mobilisation belt around the clinician's hips and the patient's distal leg applies a sustained anterior glide to the tibia and fibula while the clinician fixates the talus. The patient then lunges forward into pain-free dorsiflexion.</li>
+<li><strong><span class="term" tabindex="0" data-note="The Mulligan test of a correct MWM: the movement becomes Pain-free, Instantaneous and Long-Lasting.">PILL response</span> criteria:</strong> the movement must become Pain-free, Instantaneous and Long-Lasting. Performed as 3 sets of 10 repetitions with <span class="term" tabindex="0" data-note="Extra gentle force added at the end of a movement to gain a little more range.">overpressure</span>.</li>
+<li><strong>Fibula dorso-cranial MWM:</strong> an oblique dorso-cranial glide to the distal fibula during active inversion restores pain-free inversion in acute sprains.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Parameter</th><th>Maitland mobilisation</th><th>Mulligan MWM</th></tr></thead>
+<tbody>
+<tr><td>Mechanism</td><td>Passive oscillatory accessory glides restore arthrokinematic translation and stretch shortened tissue.</td><td>A sustained accessory glide combined with an active end-range movement corrects positional faults.</td></tr>
+<tr><td>Best indication</td><td>Acute pain modulation (Grades I-II); passive stiffness and capsular hypomobility (Grades III-IV).</td><td>Painful loss of a functional movement (e.g. dorsiflexion) from a positional fault.</td></tr>
+<tr><td>Weight-bearing</td><td>Non-weight-bearing (supine / prone / high sitting), progressing to partial weight-bearing.</td><td>Fully weight-bearing, closed-kinetic-chain functional lunge.</td></tr>
+<tr><td>Dosage</td><td>Rhythmic oscillations at 1-2&nbsp;Hz (pain) or 2-3&nbsp;Hz (stiffness) for 60-90&nbsp;seconds per set; 3-5 sets.</td><td>Sustained glide held through 10 pain-free active repetitions; 3 sets.</td></tr>
+</tbody></table></div>
+</div><aside class="q-notes" id="notes4" aria-label="Notes for Question 4"><div class="notes-head"><span>Notes &middot; Q4</span><button class="notes-hide" data-q="4">Hide</button></div><textarea class="notes-box inline-note" data-q="4" placeholder="Write your notes for Question 4 - saved automatically"></textarea><div class="notes-status" data-q="4" aria-live="polite"></div></aside></section><section class="q" id="q5"><div class="q-head"><h2>Question 5: Phased Rehabilitation &amp; Sensorimotor Progression</h2><button class="notes-toggle" data-q="5" aria-expanded="false" aria-controls="notes5" title="Notes for Question 5"><span class="qn">5</span><span class="nlabel">Notes</span></button></div><div class="q-body">
+<ul>
+<li><strong>Phase 1 &mdash; Protection &amp; oedema reduction:</strong> the <span class="term" tabindex="0" data-note="Protection, Optimal Loading, Ice, Compression, Elevation - the modern first-aid protocol for acute soft-tissue injury.">POLICE</span> protocol (Protection, Optimal Loading, Ice, Compression, Elevation) limits secondary hypoxic injury. Add active range of motion within pain-free limits (towel scrunches, foot alphabet).</li>
+<li><strong>Phase 2 &mdash; Mobility &amp; muscle performance:</strong> combine Maitland Grade III-IV glides and weight-bearing MWM with progressive Achilles stretching and closed-kinetic-chain mini-squats.</li>
+<li><strong>Phase 3 &mdash; Sensorimotor &amp; balance retraining:</strong> <span class="term" tabindex="0" data-note="The sense of body and joint position and movement.">proprioception</span> training on balance boards or BOSU trainers reduces the risk of recurrent sprains (Verhagen et al.). Progress to single-leg dynamic hop-and-stick landings.</li>
+</ul>
+<div class="flow">
+  <div class="flow-box">Phase 1 &middot; Protection &amp; oedema reduction &mdash; POLICE + pain-free active ROM</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-box">Phase 2 &middot; Mobility &amp; muscle performance &mdash; Maitland III-IV + MWM + CKC loading</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-box">Phase 3 &middot; Sensorimotor &amp; balance retraining &mdash; balance board &rarr; dynamic hop-and-stick</div>
+</div>
+</div><aside class="q-notes" id="notes5" aria-label="Notes for Question 5"><div class="notes-head"><span>Notes &middot; Q5</span><button class="notes-hide" data-q="5">Hide</button></div><textarea class="notes-box inline-note" data-q="5" placeholder="Write your notes for Question 5 - saved automatically"></textarea><div class="notes-status" data-q="5" aria-live="polite"></div></aside></section><section class="q" id="q6"><div class="q-head"><h2>Question 6: High-Yield Clinical Takeaway</h2><button class="notes-toggle" data-q="6" aria-expanded="false" aria-controls="notes6" title="Notes for Question 6"><span class="qn">6</span><span class="nlabel">Notes</span></button></div><div class="q-body">
+<p>Post-traumatic ankle mobility management requires treating <strong>both sides of the same problem</strong>:</p>
+<ul>
+<li><strong>Hypomobility</strong> &mdash; restore posterior talar glides with Maitland Grade III-IV and Mulligan MWM.</li>
+<li><strong>Instability</strong> &mdash; restore <span class="term" tabindex="0" data-note="The combined sensory and motor processing that keeps the ankle stable during movement.">sensorimotor control</span> and dynamic ankle stability through balance-board training.</li>
+</ul>
+<p>Addressing only one side leaves the patient either stiff or unstable. The examination (posterior talar glide, anterior drawer, talar tilt, single-leg stance, SEBT) tells you which deficit dominates and therefore which to prioritise first.</p>
+</div><aside class="q-notes" id="notes6" aria-label="Notes for Question 6"><div class="notes-head"><span>Notes &middot; Q6</span><button class="notes-hide" data-q="6">Hide</button></div><textarea class="notes-box inline-note" data-q="6" placeholder="Write your notes for Question 6 - saved automatically"></textarea><div class="notes-status" data-q="6" aria-live="polite"></div></aside></section>
+
+<h3>References</h3>
+<ol class="cell-list">
+<li>Maitland GD, Hengeveld E, Banks K, English K. <em>Maitland's Peripheral Manipulation</em>. 4th ed. Edinburgh: Butterworth-Heinemann/Elsevier.</li>
+<li>Mulligan BR. <em>Manual Therapy: NAGS, SNAGS, MWMs etc.</em> 6th ed. Wellington: Plane View Services; 2010.</li>
+<li>Hertel J. Functional anatomy, pathomechanics, and pathophysiology of lateral ankle instability. <em>J Athl Train</em>. 2002;37(4):364-375.</li>
+<li>Verhagen E, van der Beek A, Twisk J, Bouter L, Bahr R, van Mechelen W. The effect of a proprioceptive balance board training program for the prevention of ankle sprains: a prospective controlled trial. <em>Am J Sports Med</em>. 2004;32(6):1385-1393.</li>
+<li>Vicenzino B, Branjerdporn M, Teys P, Jordan K. Initial changes in posterior talar glide and dorsiflexion of the ankle after mobilization with movement in individuals with recurrent ankle sprain. <em>J Orthop Sports Phys Ther</em>. 2006;36(7):464-471.</li>
+<li>Delahunt E, Bleakley CM, Bossard DS, et al. Clinical assessment of acute lateral ankle sprain injuries (ROAST): 2019 consensus statement and recommendations of the International Ankle Consortium. <em>Br J Sports Med</em>. 2018;52(20):1304-1310.</li>
+<li>Bleakley CM, Glasgow P, MacAuley DC. PRICE needs updating, should we call the POLICE? <em>Br J Sports Med</em>. 2012;46(4):220-221.</li>
+<li>Nordin M, Frankel VH. <em>Basic Biomechanics of the Musculoskeletal System</em>. 4th ed. Philadelphia: Lippincott Williams &amp; Wilkins.</li>
+</ol>
+<p class="gloss-hint">Study aid only &mdash; not a substitute for clinical judgement or an official university marking scheme.</p>
+
+</div>
+
+<details class="glossary"><summary>Glossary of difficult terms (33 entries)</summary><p class="gloss-hint">Dotted-underlined words in the text also show this definition on hover or tap.</p><ul><li><strong>Anterior talofibular ligament (ATFL)</strong> &mdash; The ligament at the front of the outer ankle; the structure most often torn in a lateral ankle sprain.</li><li><strong>Arthrogenic muscle inhibition (AMI)</strong> &mdash; Reflex weakness of a muscle caused by a problem inside its joint, not by the muscle itself.</li><li><strong>Arthrokinematics</strong> &mdash; The small gliding, rolling and spinning movements between joint surfaces.</li><li><strong>Calcaneofibular ligament (CFL)</strong> &mdash; The ligament running from the outer malleolus to the heel bone; injured in more severe lateral sprains.</li><li><strong>Capsular pattern</strong> &mdash; The characteristic order in which a joint loses range when the whole joint capsule is involved. At the ankle, dorsiflexion is lost more than plantarflexion.</li><li><strong>Chronic ankle instability (CAI)</strong> &mdash; Ongoing giving-way and repeated sprains after an ankle injury, due to lax ligaments and poor sensorimotor control.</li><li><strong>Closed kinetic chain (CKC)</strong> &mdash; Exercises performed with the foot fixed on the ground while the body moves over it.</li><li><strong>Dorsiflexion</strong> &mdash; Bending the ankle so the foot lifts upward toward the shin.</li><li><strong>End-feel</strong> &mdash; The quality of resistance felt at the very end of a joint's available movement, used to judge what is limiting it.</li><li><strong>Eversion</strong> &mdash; Turning the sole of the foot outward.</li><li><strong>Goniometry</strong> &mdash; Measuring joint angles with a goniometer.</li><li><strong>Haemarthrosis</strong> &mdash; Bleeding into a joint, which increases pressure and stiffness.</li><li><strong>Hypermobility</strong> &mdash; Excessive movement at a joint, usually from lax or torn ligaments.</li><li><strong>Hypomobility</strong> &mdash; Reduced movement at a joint, usually from tight or stiff tissue.</li><li><strong>Inversion</strong> &mdash; Turning the sole of the foot inward; the mechanism of most ankle sprains.</li><li><strong>Joint position sense</strong> &mdash; The body's ability to detect the exact position of a joint without looking at it.</li><li><strong>Maitland mobilisation</strong> &mdash; Graded oscillatory passive joint movements (Grades I-V) used to reduce pain and restore movement.</li><li><strong>Mobilisation with movement (MWM)</strong> &mdash; A Mulligan technique: the therapist applies a sustained accessory glide while the patient performs the painful movement.</li><li><strong>Mortise</strong> &mdash; The bony socket formed by the tibia and fibula that holds the talus in the ankle joint.</li><li><strong>Overpressure</strong> &mdash; Extra gentle force added at the end of a movement to gain a little more range.</li><li><strong>PILL response</strong> &mdash; The Mulligan test of a correct MWM: the movement becomes Pain-free, Instantaneous and Long-Lasting.</li><li><strong>Plantarflexion</strong> &mdash; Pointing the foot downward, as when standing on tiptoe.</li><li><strong>POLICE</strong> &mdash; Protection, Optimal Loading, Ice, Compression, Elevation - the modern first-aid protocol for acute soft-tissue injury.</li><li><strong>Posterior talar glide</strong> &mdash; The backward glide of the talus inside the mortise that is required for the ankle to dorsiflex.</li><li><strong>Proprioception</strong> &mdash; The sense of body and joint position and movement.</li><li><strong>Sensorimotor control</strong> &mdash; The combined sensory and motor processing that keeps the ankle stable during movement.</li><li><strong>Star Excursion Balance Test (SEBT)</strong> &mdash; A dynamic balance test in which the patient reaches as far as possible in eight directions on one leg.</li><li><strong>Subtalar joint</strong> &mdash; The joint between the talus and the heel bone (calcaneus) that allows inversion and eversion.</li><li><strong>Syndesmosis</strong> &mdash; The fibrous joint between the tibia and fibula at the front and back of the ankle, injured in a high ankle sprain.</li><li><strong>Talar tilt test</strong> &mdash; A test that stresses the calcaneofibular ligament by tilting the heel while the ankle is held at 90 degrees.</li><li><strong>Talocrural joint</strong> &mdash; The main ankle joint between the talus and the tibia and fibula.</li><li><strong>Triceps surae</strong> &mdash; The calf muscle group - gastrocnemius and soleus - that attaches to the Achilles tendon.</li><li><strong>Weight-bearing knee-to-wall lunge test</strong> &mdash; A functional measure of dorsiflexion in which the knee is driven toward a wall with the heel down; the toe-to-wall distance is recorded.</li></ul></details>
+
+<footer>RGUHS MPT Paper IV &middot; Ankle mobility deficits study guide. Term notes explain difficult words; highlights and notes are saved in this browser.</footer>
+
+</div>
+
+<div id="popup"></div>
+<button class="notes-fab" id="notesFab" aria-controls="notesDrawer" aria-expanded="false"><span class="fab-ico" aria-hidden="true">&#9998;</span><span class="fab-txt">Study Notes</span><span class="fab-badge" id="fabBadge" hidden>0</span></button><div class="drawer-scrim" id="drawerScrim"></div><aside class="notes-drawer" id="notesDrawer" aria-label="Study notes"><div class="drawer-head"><strong>Study Notes</strong><button class="drawer-close" id="drawerClose">Close</button></div><p class="drawer-hint">Notes for each question &mdash; saved automatically in this browser.</p><div class="drawer-body"><div class="drawer-item"><label class="drawer-label" for="dnote1">Q1 &middot; Question 1: Impaired Mobility in Ankle Injuries — Pathomechanics</label><textarea class="notes-box drawer-note" id="dnote1" data-q="1" placeholder="Your notes for Question 1..."></textarea></div><div class="drawer-item"><label class="drawer-label" for="dnote2">Q2 &middot; Question 2: Osteokinematic & Arthrokinematic Joint Deficits</label><textarea class="notes-box drawer-note" id="dnote2" data-q="2" placeholder="Your notes for Question 2..."></textarea></div><div class="drawer-item"><label class="drawer-label" for="dnote3">Q3 &middot; Question 3: Clinical Assessment Protocol</label><textarea class="notes-box drawer-note" id="dnote3" data-q="3" placeholder="Your notes for Question 3..."></textarea></div><div class="drawer-item"><label class="drawer-label" for="dnote4">Q4 &middot; Question 4: Evidence-Based Mobilization Management</label><textarea class="notes-box drawer-note" id="dnote4" data-q="4" placeholder="Your notes for Question 4..."></textarea></div><div class="drawer-item"><label class="drawer-label" for="dnote5">Q5 &middot; Question 5: Phased Rehabilitation & Sensorimotor Progression</label><textarea class="notes-box drawer-note" id="dnote5" data-q="5" placeholder="Your notes for Question 5..."></textarea></div><div class="drawer-item"><label class="drawer-label" for="dnote6">Q6 &middot; Question 6: High-Yield Clinical Takeaway</label><textarea class="notes-box drawer-note" id="dnote6" data-q="6" placeholder="Your notes for Question 6..."></textarea></div></div></aside>
+
+<script>
+(function(){
+  var root = document.documentElement;
+  var content = document.getElementById('content');
+  var popup = document.getElementById('popup');
+  var pinned = null;
+
+  try{ var saved = localStorage.getItem('rguhsAnkleMob-mpt-highlights'); if(saved){ content.innerHTML = saved; } }catch(e){}
+  function saveHighlights(){ try{ localStorage.setItem('rguhsAnkleMob-mpt-highlights', content.innerHTML); }catch(e){} }
+
+  function syncTheme(){
+    var dark = root.classList.contains('dark');
+    var b = document.getElementById('toggleTheme');
+    b.textContent = dark ? 'Day mode' : 'Night mode';
+    b.classList.toggle('active', dark);
+  }
+  function syncFit(){
+    var fit = root.classList.contains('fit');
+    var b = document.getElementById('toggleFit');
+    b.textContent = fit ? 'Fit: on' : 'Fit to screen';
+    b.classList.toggle('active', fit);
+  }
+  syncTheme(); syncFit();
+
+  function sectionFor(q){ return document.getElementById('q' + q); }
+  function toggleBtnFor(q){ return document.querySelector('.notes-toggle[data-q="' + q + '"]'); }
+  function setOpen(q, open){
+    var sec = sectionFor(q), btn = toggleBtnFor(q);
+    if(!sec || !btn) return;
+    sec.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.classList.toggle('active', open);
+  }
+  function boxesFor(q){ return document.querySelectorAll('.notes-box[data-q="' + q + '"]'); }
+  function firstBox(q){ return document.querySelector('.notes-box[data-q="' + q + '"]'); }
+  function refreshHasNote(q){
+    var el = firstBox(q), val = el ? el.value : '';
+    var btn = toggleBtnFor(q);
+    if(btn) btn.classList.toggle('has-note', !!(val && val.trim()));
+  }
+  function updateBadges(){
+    var seen = {}, count = 0;
+    document.querySelectorAll('.notes-box').forEach(function(el){
+      var q = el.getAttribute('data-q');
+      if(seen[q]) return; seen[q] = 1;
+      if(el.value && el.value.trim()) count++;
+    });
+    var badge = document.getElementById('fabBadge');
+    if(badge){ badge.textContent = count; badge.hidden = (count === 0); }
+  }
+  function syncBoxes(q, value, src){
+    boxesFor(q).forEach(function(el){ if(el !== src && el.value !== value) el.value = value; });
+  }
+
+  var timers = {};
+  document.querySelectorAll('.notes-box').forEach(function(box){
+    var q = box.getAttribute('data-q');
+    var had = '';
+    try{ had = localStorage.getItem('rguhsAnkleMob-note-q' + q) || ''; }catch(e){}
+    if(had){ box.value = had; }
+    box.addEventListener('input', function(){
+      syncBoxes(q, box.value, box);
+      refreshHasNote(q);
+      updateBadges();
+      var status = document.querySelector('.notes-status[data-q="' + q + '"]');
+      if(status){ status.textContent = 'Saving...'; }
+      clearTimeout(timers[q]);
+      timers[q] = setTimeout(function(){
+        try{ localStorage.setItem('rguhsAnkleMob-note-q' + q, box.value); }catch(e){}
+        if(status){ status.textContent = 'Saved'; }
+      }, 400);
+    });
+  });
+  document.querySelectorAll('.notes-toggle').forEach(function(b){ refreshHasNote(b.getAttribute('data-q')); });
+  updateBadges();
+  document.querySelectorAll('.notes-box.inline-note').forEach(function(box){
+    if(box.value && box.value.trim()) setOpen(box.getAttribute('data-q'), true);
+  });
+
+  document.querySelectorAll('.notes-toggle, .notes-hide').forEach(function(b){
+    b.addEventListener('click', function(){
+      var q = b.getAttribute('data-q');
+      var sec = sectionFor(q);
+      setOpen(q, !(sec && sec.classList.contains('open')));
+    });
+  });
+
+  var drawer = document.getElementById('notesDrawer');
+  var scrim = document.getElementById('drawerScrim');
+  var fab = document.getElementById('notesFab');
+  function openDrawer(open, q){
+    if(!drawer) return;
+    drawer.classList.toggle('open', open);
+    scrim.classList.toggle('open', open);
+    if(fab) fab.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if(open && q){
+      var el = drawer.querySelector('.notes-box[data-q="' + q + '"]');
+      if(el){ el.scrollIntoView({block: 'center'}); el.focus(); }
+    }
+  }
+  if(fab){
+    fab.addEventListener('click', function(){ openDrawer(!drawer.classList.contains('open')); });
+    document.getElementById('drawerClose').addEventListener('click', function(){ openDrawer(false); });
+    scrim.addEventListener('click', function(){ openDrawer(false); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') openDrawer(false); });
+  }
+
+  function showPopup(el){
+    var r = el.getBoundingClientRect();
+    popup.innerHTML = '<b>' + el.textContent + '</b><br>' + el.getAttribute('data-note');
+    popup.style.display = 'block';
+    var pw = popup.offsetWidth, ph = popup.offsetHeight;
+    var left = window.scrollX + r.left;
+    var top  = window.scrollY + r.bottom + 8;
+    var vw = document.documentElement.clientWidth;
+    if(left + pw > window.scrollX + vw - 12){ left = window.scrollX + vw - pw - 12; }
+    if(left < window.scrollX + 8){ left = window.scrollX + 8; }
+    if(r.bottom + ph + 20 > window.innerHeight){ top = window.scrollY + r.top - ph - 8; }
+    popup.style.left = left + 'px';
+    popup.style.top = top + 'px';
+  }
+  function hidePopup(){ if(!pinned){ popup.style.display = 'none'; } }
+  document.addEventListener('mouseover', function(e){
+    var t = e.target.closest ? e.target.closest('.term') : null;
+    if(t && !root.classList.contains('no-notes')) showPopup(t);
+  });
+  document.addEventListener('mouseout', function(e){
+    var t = e.target.closest ? e.target.closest('.term') : null;
+    if(t && t !== pinned) hidePopup();
+  });
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target.closest('.term') : null;
+    if(t){
+      if(root.classList.contains('no-notes')) return;
+      if(pinned === t){ pinned = null; popup.style.display='none'; }
+      else { pinned = t; showPopup(t); }
+      return;
+    }
+    if(!e.target.closest || !e.target.closest('#popup')){ pinned = null; popup.style.display = 'none'; }
+  });
+  window.addEventListener('scroll', function(){ if(pinned) showPopup(pinned); }, {passive:true});
+
+  function selectionRange(){
+    var sel = window.getSelection();
+    if(!sel || sel.rangeCount === 0 || sel.isCollapsed) return null;
+    var r = sel.getRangeAt(0);
+    if(!content.contains(r.commonAncestorContainer)) return null;
+    return r;
+  }
+  function highlight(color){
+    var r = selectionRange(); if(!r) return;
+    var mark = document.createElement('mark');
+    mark.className = 'hl ' + color;
+    try{ r.surroundContents(mark); }
+    catch(err){ mark.appendChild(r.extractContents()); r.insertNode(mark); }
+    window.getSelection().removeAllRanges();
+    saveHighlights();
+  }
+  function eraseSelection(){
+    var r = selectionRange(); if(!r) return;
+    var changed = false;
+    content.querySelectorAll('mark.hl').forEach(function(m){
+      if(r.intersectsNode(m)){ m.parentNode.replaceChild(document.createTextNode(m.textContent), m); changed = true; }
+    });
+    window.getSelection().removeAllRanges();
+    if(changed) saveHighlights();
+  }
+
+  document.querySelector('.toolbar').addEventListener('click', function(e){
+    var b = e.target.closest('button'); if(!b) return;
+    if(b.dataset.color){ highlight(b.dataset.color); }
+    else if(b.id === 'erase'){ eraseSelection(); }
+    else if(b.id === 'clearAll'){
+      content.querySelectorAll('mark.hl').forEach(function(m){ m.parentNode.replaceChild(document.createTextNode(m.textContent), m); });
+      saveHighlights();
+    }
+    else if(b.id === 'toggleNotes'){
+      root.classList.toggle('no-notes');
+      var on = !root.classList.contains('no-notes');
+      b.classList.toggle('active', on);
+      if(!on){ pinned = null; popup.style.display = 'none'; }
+    }
+    else if(b.id === 'toggleTheme'){
+      root.classList.toggle('dark');
+      try{ localStorage.setItem('rguhsAnkleMob-theme', root.classList.contains('dark') ? 'dark' : 'light'); }catch(e2){}
+      syncTheme();
+    }
+    else if(b.id === 'toggleFit'){
+      root.classList.toggle('fit');
+      try{ localStorage.setItem('rguhsAnkleMob-fit', root.classList.contains('fit') ? '1' : '0'); }catch(e2){}
+      syncFit();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if((e.key === 'Enter' || e.key === ' ') && document.activeElement &&
+       document.activeElement.classList && document.activeElement.classList.contains('term')){
+      e.preventDefault(); pinned = document.activeElement; showPopup(pinned);
+    }
+    if(e.key === 'Escape'){ pinned = null; popup.style.display = 'none'; }
+  });
+})();
+</script>
+</body>
+</html>
